@@ -1,4 +1,4 @@
-from datetime import datetime
+from datetime import datetime, timedelta
 
 def info(fn):
     def some_fn():
@@ -9,6 +9,6 @@ def info(fn):
 
 @ info
 def timer():
-    print(f"Функция {info.__name__} выполнилась в {datetime.now()}")
+    print(f"Функция {info.__name__} выполнилась за {timedelta()}")
 
 timer()
